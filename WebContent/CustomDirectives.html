@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Angular JS Custom Directives</title>
+<link rel="stylesheet" href="imports/css/bootstrap.css">
+<script src="imports/js/jquery.js"></script>
+<script src="imports/js/bootstrap.min.js"></script>
+<script src="imports/js/angular.js"></script>
+<!-- <script src="imports/js/angular-route.js"></script>
+<script src="imports/js/angular-ui-router.js"></script> -->
+<script src="appCustomDirectives.js"></script>
+</head>
+<body ng-app="mainApp" >
+	<h2>AngularJS Custom Directive Practice Part 1</h2>
+	<div class="container" ng-controller="StudentController">
+		<student attr="abc"></student>
+		<br />
+		<student attr="def"></student>
+	</div>	
+	<br>
+	<h2>AngularJS Custom Directive Practice Part 2</h2>
+	<div class="container" ng-controller="ShrekController">
+		<shrek username="King_Bradley"></shrek>
+		<shrek username="Darth_Sidious"></shrek>
+	</div>	
+</body>
+</html>

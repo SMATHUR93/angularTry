@@ -1,0 +1,46 @@
+
+<html>
+<head>
+<title>Angular JS Views</title>
+
+<link rel="stylesheet" href="imports/css/bootstrap.css">
+<script src="imports/js/jquery.js"></script>
+<script src="imports/js/bootstrap.min.js"></script>
+<script src="imports/js/angular.js"></script>
+<script src="imports/js/angular-route.js"></script>
+<script src="imports/js/angular-ui-router.js"></script>
+<script src="appColorRouted.js"></script>
+</head>
+<body data-ng-app="colorapp">
+	<div class="col-xs-12">
+		<h2>Welcome to Middle Earth ,Battle of Elements</h2>
+	</div>
+	<div class="col-xs-12">
+		<!-- COLUMN ONE NAMED VIEW LINKS -->
+		<div class="col-sm-offset-2 col-sm-10">
+			<ul>
+				<li><a data-ui-sref="red">RED</a></li>
+				<li><a data-ui-sref="orange">ORANGE</a></li>
+				<li><a data-ui-sref="yellow">YELLOW</a></li>
+				<li><a data-ui-sref="green">GREEN</a></li>
+				<li><a data-ui-sref="blue">BLUE</a></li>
+				<li><a data-ui-sref="purple">PURPLE</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-xs-12">
+		<!-- COLUMN ONE NAMED VIEWS -->
+		<div class="col-sm-6" style="background-color:#ffffff;border: 2px solid black;">
+			<h3 style="color:black;">Light Side</h3>
+			<div data-ui-view="light"></div>
+		</div>
+
+		<!-- COLUMN TWO NAMED VIEWS -->
+		<div class="col-sm-6" style="background-color:#000000;border: 2px solid white;">
+			<h3 style="color:white;">Dark Side</h3>
+			<div data-ui-view="dark"></div>
+		</div>
+	</div>
+
+</body>
+</html>

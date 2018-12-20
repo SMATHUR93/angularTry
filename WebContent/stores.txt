@@ -1,0 +1,67 @@
+[
+ {
+	 "id" : "1",
+	 "name" : "shredder1",
+	 "address" : {
+		 "houseNumber" : "12",
+		 "street" : "1566",
+		 "area"  : "gfg",
+		 "city" : "dfdsgfgfdgf",
+		 "state" : "ffsdfdfsd",
+		 "country" : "ytytytyt",
+		 "pinCode" : "446666"
+	 }
+ },
+ {
+	 "id" : "2",
+	 "name" : "shredder2",
+	 "address" : {
+		 "houseNumber" : "12",
+		 "street" : "1566",
+		 "area"  : "gsdsfg",
+		 "city" : "dfdsgfsdfsdfsdffgfdgf",
+		 "state" : "ffsdfdfsd",
+		 "country" : "ytytytyt",
+		 "pinCode" : "446222"
+	 }
+ },
+ {
+	 "id" : "3",
+	 "name" : "shredder3",
+	 "address" : {
+		 "houseNumber" : "12",
+		 "street" : "1566",
+		 "area"  : "gfg",
+		 "city" : "dfdsgfgfdgf",
+		 "state" : "ffsdfdfsd",
+		 "country" : "ytytytyt",
+		 "pinCode" : "446666"
+	 }
+ },
+ {
+	 "id" : "4",
+	 "name" : "shredder",
+	 "address" : {
+		 "houseNumber" : "12",
+		 "street" : "1566",
+		 "area"  : "gfg",
+		 "city" : "dfdsgfgfdgf",
+		 "state" : "ffsdfdfsd",
+		 "country" : "ytytfgfdgdfytyt",
+		 "pinCode" : "445466"
+	 }
+ },
+ {
+	 "id" : "5",
+	 "name" : "shredder5",
+	 "address" : {
+		 "houseNumber" : "12",
+		 "street" : "1566",
+		 "area"  : "gfg",
+		 "city" : "dfdsgfgfdgf",
+		 "state" : "ffsdfdfsd",
+		 "country" : "ytytytyt",
+		 "pinCode" : "545435"
+	 }
+ }
+ ]

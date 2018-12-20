@@ -1,0 +1,33 @@
+<style> 
+div.mycolor {
+	border : 2px solid black;
+	color : #DDA0DD;
+    background-color: purple;
+    position: relative;
+    -webkit-animation-name: color; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-name: color;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes color {
+    0%   {background-color:#purple; left:0px; width: 500px;}
+    25%  {background-color:#9932CC; left:20px;width: 520px;}
+    50%  {background-color:#8A2BE2; left:40px;width: 500px;}
+    75%  {background-color:#EE82EE; left:20px;width: 520px;}
+    100% {background-color:purple; left:0px;width: 500px;}
+}
+
+/* Standard syntax */
+@keyframes color {
+     0%   {background-color:#purple; left:0px; width: 500px;}
+    25%  {background-color:#9932CC; left:20px;width: 520px;}
+    50%  {background-color:#8A2BE2; left:40px;width: 500px;}
+    75%  {background-color:#EE82EE; left:20px;width: 520px;}
+    100% {background-color:purple; left:0px;width: 500px;}
+}
+</style>
+<div class="mycolor col-xs-offset-2 col-xs-9"><h3>{{message}}</h3></div>

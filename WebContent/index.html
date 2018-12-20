@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body onload="init()" ng-model="myApp" ng-controller="dateCtrl">
+<form name="hello" onsubmit="onsub()">
+<input type="date" id="theDate" ng-model="hello.theDate" readonly>
+<input type="submit">
+</form>
+<script>
+function init()
+{
+	var date = new Date();
+	var day = date.getDate();
+	var month = date.getMonth() + 1;
+	var year = date.getFullYear();
+	if (month < 10) month = "0" + month;
+	if (day < 10) day = "0" + day;
+	var today = year + "-" + month + "-" + day;
+	document.getElementById('theDate').value = today;	
+}
+function onsub()
+{
+	alert("hello");
+	var app = angular.module('myApp', []);
+	alert("loaded module");
+	console.log("testing "+$scope);
+	app.controller('dateCtrl', function($scope) {		
+	    alert("im in in");
+	    alert($scope.hello.theDate);
+	    console.log($scope.hello.theDate); */
+	});
+}
+</script>
+</body>
+</html>
+<!-- <html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body  onload="fun()">	
+	<div><input type="date"></div>
+	<div>
+		<div>
+			<div>Select City</div>
+			<div id="cities"></div> 
+			<div><select id="cities" onblur="pins(this.options[this.selectedIndex].value)"></select></div>
+		</div>
+		<div>
+			<div>Select Pin</div>
+			<div id="pins"></div>
+		</div>
+	</div>
+	
+<script type="text/javascript">
+
+var citypins = [ 
+    			{'city' : 'Los Angeles', 'pins' : ['423456','512345','854213'] },
+    			{'city' : 'Washington DC', 'pins' : ['123456','112345','854213'] },
+    			{'city' : 'New York City', 'pins' : ['951236','478625','824213'] },
+    			{'city' : 'Chicago', 'pins' : ['785456','845245','857813'] },
+    			{'city' : 'Rio De Janeiro', 'pins' : ['951425','455420','258113'] },
+    			{'city' : 'London', 'pins' : ['122046','112205','857253'] },
+    			{'city' : 'Paris', 'pins' : ['924456','558345','110053'] },
+    			{'city' : 'Berlin', 'pins' : ['601236','985345','552313'] },
+    			{'city' : 'Rome', 'pins' : ['152306','752331','112288'] },
+    			{'city' : 'Moscow', 'pins' : ['823311','224452','324363'] },
+    			{'city' : 'Istanbul', 'pins' : ['658530','222345','855250'] },
+    			{'city' : 'Abu Dhabi', 'pins' : ['123206','150045','552513'] },
+    			{'city' : 'Dubai' , 'pins' : ['544144','885014','888110'] },
+    			{'city' : 'Bejieng', 'pins' : ['121140','111045','454213'] },
+    			{'city' : 'Shanghai', 'pins' : ['561256','331147','221013'] },
+    			{'city' : 'Delhi', 'pins' : ['161242','252345','444213'] },
+    			{'city' : 'Mumbai', 'pins' : ['782210','445577','445013'] },
+    			{'city' : 'Chennai', 'pins' : ['304501','244522','455578'] },
+    			{'city' : 'Kolkata', 'pins' : ['450796','952345','845553'] },
+    			{'city' : 'Tokyo', 'pins' : ['123555','115447','552213'] },
+    			{'city' : 'Singapore', 'pins' : ['122250','111445','821213'] },
+    			{'city' : 'Sydney', 'pins' : ['123222','200035','815800'] },
+    			{'city' : 'Canberra', 'pins' : ['122067','155705','145213'] },
+    			{'city' : 'Cape Town', 'pins' : ['127790','112075','745213'] }		
+    		];	
+
+function fun() {
+		/* alert("hello"); */
+		
+		console.log("hello");
+		console.log(citypins);
+		console.log("hello again");
+		
+		function cities()
+		{
+			alert("hello in cities function");
+			var citiesSelect='<select id="selectcity" onchange ="pins(this.value)" >';
+			// var citiesSelect="<select id='selectcity' >";
+			var counter;
+			for( counter in citypins)
+				{				 	
+					citiesSelect += "<option value=";
+				 	citiesSelect += counter;
+				 	citiesSelect += ">";
+				 	citiesSelect += citypins[counter].city;
+				 	citiesSelect += "</option>"; 
+				}
+			citiesSelect += "</select>";
+			//alert(citiesSelect);
+			document.getElementById("cities").innerHTML=citiesSelect;
+		}
+		
+		
+		cities();	
+		//document.getElementById("selectcity").onblur = pins(this.options[this.selectedIndex].value);
+	}	
+function pins(selectedcity)
+{
+	console.log("selectedcity is "+ selectedcity);
+	alert("hello in pins function");
+	var pinsSelect="<select id='pin'><option>Select a Value</option>";
+	var pinnedcity = citypins[selectedcity].pins;
+	console.log("pinnedcity is "+pinnedcity);
+	for( pin in pinnedcity)
+		{
+			pinsSelect += "<option>";
+			pinsSelect += pinnedcity[pin];
+			pinsSelect += "</option>";
+		}
+	pinsSelect += "</select>";
+	alert(pinsSelect);
+	document.getElementById("pins").innerHTML=pinsSelect;
+}
+</script>
+</body>
+</html> -->
